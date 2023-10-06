@@ -1,13 +1,16 @@
+import {lazy, Suspense} from "react";
 import {Outlet} from "react-router-dom";
+
+const Header = lazy(() => import("./components/Header"));
+const Footer = lazy(() => import("./components/Footer/Footer"));
 const App = () => {
     return (
         <>
-            <Outlet />
-            <h1>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi perferendis numquam, itaque vitae
-                aperiam velit ducimus vel dolorum molestiae a exercitationem deleniti blanditiis harum sunt inventore,
-                pariatur ab magnam quia!
-            </h1>
+            <Header />
+            <Suspense fallback={<h1>LOADING . . .</h1>}>
+                <Outlet />
+            </Suspense>
+            <Footer />
         </>
     );
 };

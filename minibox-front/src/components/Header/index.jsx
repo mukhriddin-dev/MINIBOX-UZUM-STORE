@@ -1,14 +1,15 @@
-import HeaderTop from './HeaderTop';
-import HeaderMiddle from './HeaderMiddle';
-import Navigation from './Navigation';
+import HeaderTop from "./HeaderTop";
+import HeaderMiddle from "./HeaderMiddle";
+import Navigation from "./Navigation";
+import "./index.scss"
 
 const index = () => {
     return (
         <header>
-            <div className="container">
-                <HeaderTop />
+            <HeaderTop />
+            <div className="container mx-auto">
                 <HeaderMiddle />
-                <Navigation/>
+                <Navigation />
             </div>
         </header>
     );
