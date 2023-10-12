@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.4);
+}
+
+main {
+  min-height: 100vh;
+}
+
+.p-galleria  .p-galleria-thumbnail-container {
+  min-height: 100%;
+  background: #fff !important;
+}
+
+.p-galleria-thumbnail-item-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100% !important;
+}
+
+.p-galleria-item-prev {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-content: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  margin-left: 10px;
+  font-size: 10px;
+}
+
+.p-galleria-item-next {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-content: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.p-galleria-item-next-icon {
+  width: 14px;
+  height: 14px;
+}
+
+.p-galleria-item-prev-icon {
+  width: 14px;
+  height: 14px;
+}
